@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>robbertmijn: Science Projects</title>
+
+<script src="site_libs/header-attrs-2.28/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
+<link rel="shortcut icon" type="image/png" href="raw_images/reibek_icon.png"/>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- NOTE: add "navbar-inverse" class for an alternate navbar background -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Robbert van der Mijn</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="science.html"><span class="fas fa-flask"></span> Science Projects</a></li>
+        <li><a href="video.html"><span class="fas fa-video"></span> Video Projects</a></li>
+        <li><a href="publications.html"><span class="fas fa-book"></span> Publications</a></li>
+        <li><a href="teaching.html"><span class="fas fa-chalkboard-teacher"></span> Teaching</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://www.linkedin.com/in/robbert-van-der-mijn/" target="_blank"><span class="fa fa-linkedin"></span></a></li>
+        <li><a href="https://www.youtube.com/user/robbertmijn" target="_blank"><span class="fa fa-youtube"></span></a></li>
+        <li><a href="https://scholar.google.nl/citations?user=JhMeGD8AAAAJ&hl" target="_blank"><span class="fa fa-graduation-cap"></span></a></li>        <li><a href="https://github.com/robbertmijn" target="_blank"><span class="fa fa-github"></span></a></li>
+        <li><a href="email.html"><span class="fas fa-at"></span></a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Science Projects</h1>
+
+</div>
+
+
+<div class="row"
+style="padding-top: 30px;padding-right: 30px;padding-left: 30px">
+<div id="concealed-information-tests" class="section level1">
+<h1>Concealed Information Tests</h1>
+<div id="november-1-2021" class="section level6">
+<h6>November 1, 2021</h6>
+<p>As part of a project funded by
+<a href="https://www.politieenwetenschap.nl/" target="_blank">Politie en
+Wetenschap</a> I study how neurophysiological measures (e.g., pupil
+size, eye movement, EEG) can be used in combination with <em>rapid
+serial visual presentation</em> (RSVP) to perform <em>concealed
+information tests</em> (CIT). We develop state-of-the-art methods to
+classify if participants in mock-crime experiments are hiding
+information. The results will be published in peer-reviewed journals and
+open-source software packages.</p>
+<p><img src = "raw_images/p_en_w_logo.png" align = "center" style="width:25%"></p>
+<hr />
+</div>
+<div id="microsaccades" class="section level3">
+<h3>Microsaccades</h3>
+<div id="november-30-2022" class="section level6">
+<h6>November 30, 2022</h6>
+<p>I developed a module for <code>python</code> that can be used to
+classify microsaccades from gaze data collected with an eye-tracker.
+I’ve implemented the algorithm from
+<a href="https://doi.org/10.1016/S0042-6989(03)00084-1" target="_blank">Engbert
+&amp; Kliegl (2003)</a> in a module called <code>pycrosaccade</code>,
+which can be installed using <code>pip</code>. The source code is
+available at
+<a href="https://github.com/robbertmijn/pycrosaccade" target="_blank">https://github.com/robbertmijn/pycrosaccade</a>.</p>
+<hr />
+</div>
+</div>
+<div id="rsvp" class="section level3">
+<h3>RSVP</h3>
+<div id="november-16-2021" class="section level6">
+<h6>November 16, 2021</h6>
+<p>I developed software that can be used to show <em>rapid serial visual
+presentations</em> in combination with
+<a href="https://osdoc.cogsci.nl/" target="_blank">Open Sesame</a> (Open
+Source software used to present stimuli and record responses). The
+source code is available at
+<a href="https://github.com/robbertmijn/opensesame-plugin-RSVP" target="_blank">https://github.com/robbertmijn/opensesame-plugin-RSVP</a>.</p>
+<p><img src = "raw_images/rsvp.gif" align = "center" style="width:25%"></p>
+<hr />
+</div>
+</div>
+<div id="stimulus-preparation" class="section level3">
+<h3>Stimulus Preparation</h3>
+<div id="january-15-2023" class="section level6">
+<h6>January 15, 2023</h6>
+<p>In a typical CIT, we compare a participants’ response to a
+<em>probe</em> stimulus (e.g., face of the victim) with the same
+participants’ response to a <em>control</em> stimulus (e.g., a random
+face from a large database). Because neurophysiological responses are
+very sensitive to the physical properties of a stimulus, all these
+stimuli require some form of standardisation. For face stimuli, I’ve
+developed a tool that scales, rotates, crops, and standardizes contrast
+and luminance for a large set automatically using face recognition. The
+source code is available at
+<a href="https://github.com/robbertmijn/face-processor" target="_blank">https://github.com/robbertmijn/opensesame-plugin-RSVP</a>.</p>
+<p><img src = "raw_images/standaardisering.jpg" align = "center" style="width:75%"></p>
+<hr />
+</div>
+</div>
+</div>
+<div id="time-perception" class="section level1">
+<h1>Time Perception</h1>
+<div id="june-17-2022" class="section level6">
+<h6>June 17, 2022</h6>
+<p>In 2017 I started studying time perception in the Temporal Cognition
+Lab of <a href=http://van-rijn.org/ target="_blank">Hedderik van
+Rijn</a> at the
+<a href=http://neuroscience.link/ target="_blank">department of
+Cognitive/Experimental Psychology</a> of the
+<a href=https://www.rug.nl/staff/w.r.van.der.mijn/ target="_blank">University
+of Groningen</a>. We aim to answer questions about how our brain is able
+to keep track of time (in the second-minutes range). We design
+experiments <a href=tur.html target="_blank">(try one here!)</a>,
+collect neurophysiological data (EEG, fMRI) and do sophisticated
+analyses, mostly on healthy participants. The results of these studies
+are published in peer reviewed journals and lead to my dissertation:
+<a href=https://research.rug.nl/en/publications/timing-under-risk target="_blank">Timing
+Under Risk</a>. I defended my thesis and propositions during my PhD
+defense on June 17 2022</p>
+<p><img src = "raw_images/robbert_defense_2.jpg" align = "center" style="width:75%"></p>
+<hr />
+</div>
+<div id="choice-behavior-and-timing-in-heat" class="section level3">
+<h3>Choice behavior and timing in heat</h3>
+<div id="june-17-2019" class="section level6">
+<h6>June 17, 2019</h6>
+<p>Changes in body temperature could influence the way our brain
+functions. For example, it is thought that our internal clock speeds up
+when core body temperature rises. In a controlled experiment, we heated
+up participants in a jacuzzi and asked them to perform a timing task,
+and a decision making task. We found out that temperature plays an
+important role in decision-making under time pressure.</p>
+<p><a href=https://www.nature.com/articles/s41598-019-46073-3 target="_blank">Read
+the paper here!</a></p>
+<p><img src = "raw_images/jacuzzi_experiment.jpg" align = "center" style="width:75%"></p>
+<hr />
+</div>
+</div>
+<div id="timing-in-the-attentional-blink" class="section level3">
+<h3>Timing in the attentional blink</h3>
+<div id="april-30-2018" class="section level6">
+<h6>April 30, 2018</h6>
+<p>In our search for the clock in our brain, we tried to figure out in
+what way memory consolidation may be involved as a starting signal for
+interval timing. Using EEG, we investigated if the P3 (an electrical
+signal that can tell us if/when something is consolidated into working
+memory) - which can be slightly delayed if you show two things in rapid
+succession (which we sometimes call the attentional blink) - is related
+to time estimation. It wasn’t, which was very surprising!</p>
+<p>Our paper about this finding was published in Neuropsychologia,
+<a href=https://doi-org.proxy-ub.rug.nl/10.1016/j.neuropsychologia.2018.04.039 target="_blank">Read
+it here!</a></p>
+<p><img src = "raw_images/timingAB.png" align = "center" style="width:75%"></p>
+<hr />
+</div>
+</div>
+<div id="starcraft2" class="section level3">
+<h3>StarCraft2</h3>
+<div id="december-22-2020" class="section level6">
+<h6>December 22, 2020</h6>
+<p>Time perception is often studied in artificial laboratory conditions;
+a participant sits in front of a screen and is asked to judge time
+intervals or press buttons for very specific durations. We are sometimes
+faced with participants who are not that motivated to do our
+experiments. In this study, I analysed a large set of replays from the
+popular online real-time strategy game StarCraft2. Players of that game
+know very well how to exploit temporal regularities of the
+<a href=https://www.youtube.com/watch?v=2rFGzYEynaQ target="_blank">Queen
+Inject</a> ability. Good estimation of how much time has passed is
+advantageous for them, and this dataset therefore provides a unique way
+to study time perception! In 2019 I Presented a poster at
+<a href=https://trf2.inb.unam.mx/ target="_blank">Timing Research
+Forum</a> about this project.
+<a href=https://osf.io/fwmj7/ target="_blank">Read more about it on my
+OSF repository.</a>. Me and Hedderik van Rijn also described this study
+in detail in an article that was published in
+<a href=https://onlinelibrary.wiley.com/doi/full/10.1111/cogs.12939 target="_blank">Cognitive
+Science</a>.</p>
+<p><img src = "raw_images/figure1_intro.jpg" align = "center" style="width:75%"></p>
+<hr />
+</div>
+</div>
+<div id="timing-under-risk" class="section level3">
+<h3>Timing Under Risk</h3>
+<div id="december-29-2020" class="section level6">
+<h6>December 29, 2020</h6>
+<p>Attention Perception and Psychophysics published an article written
+by me, Atser Damsma, Niels Taatgen and Hedderik van Rijn! It’s about the
+way people are aware of their own impreciseness when trying to time a
+short interval, and use this awareness to optimize their behavior.
+<a href=https://link-springer-com.proxy-ub.rug.nl/article/10.3758/s13414-020-02225-6 target="_blank">Read
+it here!</a></p>
+<p>In this project I contribute to knowledge about how we use time
+perception in tasks where being on time really matters for participants.
+It turns out that being careful about being exactly on time has similar
+properties to being precise in other types of decisions.</p>
+<p>Want to try the type of experiment I use?
+<a href=tur.html target="_blank">Try one here!</a></p>
+<p><img src = "raw_images/tur_task.png" align = "center" style="width:75%"></p>
+<hr />
+</div>
+</div>
+<div id="talking-about-time-at-the-kinderuniversiteit"
+class="section level3">
+<h3>Talking About Time at the Kinderuniversiteit</h3>
+<div id="december-13-2018" class="section level6">
+<h6>December 13, 2018</h6>
+<p>I wrote a post for Mindwise, the blog platform of the Department of
+Psychology of the University of Groningen.
+<a href=http://mindwise-groningen.nl/talking-about-time-at-the-kinderuniversiteit/ target="_blank">Read
+about it on Mindwise!</a></p>
+<p><img src = "raw_images/ku_robbert.jpeg" align = "center" style="width:75%"></p>
+<hr />
+</div>
+</div>
+<div id="hoe-lang-duurt-saai" class="section level3">
+<h3>Hoe Lang Duurt Saai?</h3>
+<div id="july-2-2020" class="section level6">
+<h6>July 2, 2020</h6>
+<p>The Scholierenacacemie developed interactive lessons for high school
+students based on the research we do on time perception. I developed a
+set of experiments that students perform themselves first, and then
+learn how to interpret the results.
+<a href=https://www.rug.nl/society-business/scholierenacademie/leraren/op-school/hoe-lang-duurt-saai#info target="_blank">Read
+about it on the website of the Scholierenacademie.</a> Part of the
+package are three explanatory videos like this one, in which I explain
+some of the result:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jlpGcTMQMyE" frameborder="0" allowfullscreen>
+</iframe>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row" style="padding-top: 0px;padding-right: 30px;padding-left: 30px">
+<p>Copyright &copy; 2021 Robbert van der Mijn</p>
+</div>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
